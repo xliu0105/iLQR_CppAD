@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -shared -Wl,-soname,libiLQR_CppAD.so -o ../lib/libiLQR_CppAD.so CMakeFiles/iLQR_CppAD.dir/src/iLQR_CppAD.cpp.o   -L/home/liu_xu/liuxu_Documents/iLQR_CppAD/lib 
