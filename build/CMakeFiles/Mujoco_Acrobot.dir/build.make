@@ -93,6 +93,7 @@ Mujoco_Acrobot_EXTERNAL_OBJECTS =
 ../bin/Mujoco_Acrobot: CMakeFiles/Mujoco_Acrobot.dir/src/Mujoco_Acrobot.cpp.o
 ../bin/Mujoco_Acrobot: CMakeFiles/Mujoco_Acrobot.dir/build.make
 ../bin/Mujoco_Acrobot: ../lib/libiLQR_CppAD.so
+../bin/Mujoco_Acrobot: /usr/lib/x86_64-linux-gnu/libglfw.so.3.3
 ../bin/Mujoco_Acrobot: CMakeFiles/Mujoco_Acrobot.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/liu_xu/liuxu_Documents/iLQR_CppAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/Mujoco_Acrobot"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Mujoco_Acrobot.dir/link.txt --verbose=$(VERBOSE)

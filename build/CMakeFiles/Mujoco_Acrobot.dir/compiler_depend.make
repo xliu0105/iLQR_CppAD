@@ -514,6 +514,20 @@ CMakeFiles/Mujoco_Acrobot.dir/src/Mujoco_Acrobot.cpp.o: ../src/Mujoco_Acrobot.cp
   /usr/include/c++/9/ratio \
   /usr/include/c++/9/ctime \
   /usr/include/c++/9/bits/parse_numbers.h \
+  /usr/include/c++/9/thread \
+  /usr/include/c++/9/memory \
+  /usr/include/c++/9/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/9/ext/concurrence.h \
+  /usr/include/c++/9/bits/unique_ptr.h \
+  /usr/include/c++/9/bits/shared_ptr.h \
+  /usr/include/c++/9/bits/shared_ptr_base.h \
+  /usr/include/c++/9/bits/shared_ptr_atomic.h \
+  /usr/include/c++/9/backward/auto_ptr.h \
+  /usr/include/c++/9/fstream \
+  /usr/include/c++/9/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
+  /usr/include/c++/9/bits/fstream.tcc \
   /usr/include/cppad/cppad.hpp \
   /usr/include/cppad/base_require.hpp \
   /usr/include/cppad/utility/error_handler.hpp \
@@ -533,10 +547,8 @@ CMakeFiles/Mujoco_Acrobot.dir/src/Mujoco_Acrobot.cpp.o: ../src/Mujoco_Acrobot.cp
   /usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h \
   /usr/include/libintl.h \
-  /usr/include/c++/9/bits/codecvt.h \
   /usr/include/c++/9/bits/locale_facets_nonio.tcc \
   /usr/include/c++/9/bits/locale_conv.h \
-  /usr/include/c++/9/bits/unique_ptr.h \
   /usr/include/cppad/core/base_hash.hpp \
   /usr/include/cppad/core/numeric_limits.hpp \
   /usr/include/cppad/core/epsilon.hpp \
@@ -544,13 +556,6 @@ CMakeFiles/Mujoco_Acrobot.dir/src/Mujoco_Acrobot.cpp.o: ../src/Mujoco_Acrobot.cp
   /usr/include/cppad/core/base_double.hpp \
   /usr/include/cppad/core/base_complex.hpp \
   /usr/include/cppad/utility/thread_alloc.hpp \
-  /usr/include/c++/9/memory \
-  /usr/include/c++/9/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/9/ext/concurrence.h \
-  /usr/include/c++/9/bits/shared_ptr.h \
-  /usr/include/c++/9/bits/shared_ptr_base.h \
-  /usr/include/c++/9/bits/shared_ptr_atomic.h \
-  /usr/include/c++/9/backward/auto_ptr.h \
   /usr/include/cppad/core/zdouble.hpp \
   /usr/include/cppad/utility/nan.hpp \
   /usr/include/cppad/utility.hpp \
@@ -770,10 +775,6 @@ CMakeFiles/Mujoco_Acrobot.dir/src/Mujoco_Acrobot.cpp.o: ../src/Mujoco_Acrobot.cp
   /usr/include/cppad/core/capacity_order.hpp \
   /usr/include/cppad/core/num_skip.hpp \
   /usr/include/cppad/core/check_for_nan.hpp \
-  /usr/include/c++/9/fstream \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
-  /usr/include/c++/9/bits/fstream.tcc \
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/environments.h \
@@ -839,8 +840,38 @@ CMakeFiles/Mujoco_Acrobot.dir/src/Mujoco_Acrobot.cpp.o: ../src/Mujoco_Acrobot.cp
   /usr/include/cppad/core/lu_ratio.hpp \
   /usr/include/cppad/core/bender_quad.hpp \
   /usr/include/cppad/core/opt_val_hes.hpp \
-  /usr/include/cppad/core/undef.hpp
+  /usr/include/cppad/core/undef.hpp \
+  /home/liu_xu/.mujoco/mujoco-3.0.0/include/mujoco/mujoco.h \
+  /home/liu_xu/.mujoco/mujoco-3.0.0/include/mujoco/mjexport.h \
+  /usr/include/c++/9/math.h \
+  /home/liu_xu/.mujoco/mujoco-3.0.0/include/mujoco/mjdata.h \
+  /home/liu_xu/.mujoco/mujoco-3.0.0/include/mujoco/mjtnum.h \
+  /home/liu_xu/.mujoco/mujoco-3.0.0/include/mujoco/mjmodel.h \
+  /home/liu_xu/.mujoco/mujoco-3.0.0/include/mujoco/mjthread.h \
+  /home/liu_xu/.mujoco/mujoco-3.0.0/include/mujoco/mjmacro.h \
+  /home/liu_xu/.mujoco/mujoco-3.0.0/include/mujoco/mjplugin.h \
+  /home/liu_xu/.mujoco/mujoco-3.0.0/include/mujoco/mjvisualize.h \
+  /home/liu_xu/.mujoco/mujoco-3.0.0/include/mujoco/mjrender.h \
+  /home/liu_xu/.mujoco/mujoco-3.0.0/include/mujoco/mjui.h \
+  /usr/include/GLFW/glfw3.h \
+  /usr/include/GL/gl.h \
+  /usr/include/GL/glext.h \
+  /usr/include/KHR/khrplatform.h
 
+
+/usr/include/KHR/khrplatform.h:
+
+/usr/include/GL/glext.h:
+
+/usr/include/GL/gl.h:
+
+/usr/include/GLFW/glfw3.h:
+
+/home/liu_xu/.mujoco/mujoco-3.0.0/include/mujoco/mjrender.h:
+
+/home/liu_xu/.mujoco/mujoco-3.0.0/include/mujoco/mjplugin.h:
+
+/home/liu_xu/.mujoco/mujoco-3.0.0/include/mujoco/mjdata.h:
 
 /usr/include/cppad/core/bender_quad.hpp:
 
@@ -906,10 +937,6 @@ CMakeFiles/Mujoco_Acrobot.dir/src/Mujoco_Acrobot.cpp.o: ../src/Mujoco_Acrobot.cp
 
 /usr/include/unistd.h:
 
-/usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h:
-
-/usr/include/c++/9/fstream:
-
 /usr/include/cppad/core/num_skip.hpp:
 
 /usr/include/cppad/core/capacity_order.hpp:
@@ -947,10 +974,6 @@ CMakeFiles/Mujoco_Acrobot.dir/src/Mujoco_Acrobot.cpp.o: ../src/Mujoco_Acrobot.cp
 /usr/include/cppad/local/print_op.hpp:
 
 /usr/include/cppad/local/pow_op.hpp:
-
-/usr/include/c++/9/bits/fstream.tcc:
-
-/usr/include/cppad/local/parameter_op.hpp:
 
 /usr/include/cppad/local/log1p_op.hpp:
 
@@ -1005,6 +1028,8 @@ CMakeFiles/Mujoco_Acrobot.dir/src/Mujoco_Acrobot.cpp.o: ../src/Mujoco_Acrobot.cp
 /usr/include/cppad/core/chkpoint_one/for_sparse_jac.hpp:
 
 /usr/include/cppad/core/chkpoint_one/rev_sparse_jac.hpp:
+
+/home/liu_xu/.mujoco/mujoco-3.0.0/include/mujoco/mjmacro.h:
 
 /usr/include/cppad/core/ad_fun.hpp:
 
@@ -1110,6 +1135,8 @@ CMakeFiles/Mujoco_Acrobot.dir/src/Mujoco_Acrobot.cpp.o: ../src/Mujoco_Acrobot.cp
 
 /usr/include/cppad/core/ad_ctor.hpp:
 
+/home/liu_xu/.mujoco/mujoco-3.0.0/include/mujoco/mjthread.h:
+
 /usr/include/cppad/local/discrete_op.hpp:
 
 /usr/include/cppad/local/atom_state.hpp:
@@ -1198,6 +1225,10 @@ CMakeFiles/Mujoco_Acrobot.dir/src/Mujoco_Acrobot.cpp.o: ../src/Mujoco_Acrobot.cp
 
 /usr/include/cppad/utility/check_numeric_type.hpp:
 
+/usr/include/cppad/utility.hpp:
+
+/usr/include/cppad/utility/nan.hpp:
+
 /usr/local/include/Eigen/src/Core/functors/UnaryFunctors.h:
 
 /usr/local/include/Eigen/src/IterativeLinearSolvers/IncompleteLUT.h:
@@ -1229,6 +1260,8 @@ CMakeFiles/Mujoco_Acrobot.dir/src/Mujoco_Acrobot.cpp.o: ../src/Mujoco_Acrobot.cp
 /usr/local/include/Eigen/src/Core/GenericPacketMath.h:
 
 ../include/Mujoco_Acrobot.h:
+
+/usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h:
 
 /usr/local/include/Eigen/src/Core/MathFunctions.h:
 
@@ -1297,6 +1330,8 @@ CMakeFiles/Mujoco_Acrobot.dir/src/Mujoco_Acrobot.cpp.o: ../src/Mujoco_Acrobot.cp
 /usr/local/include/Eigen/src/Core/util/Constants.h:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h:
+
+/usr/include/c++/9/thread:
 
 /usr/include/c++/9/system_error:
 
@@ -1500,6 +1535,8 @@ CMakeFiles/Mujoco_Acrobot.dir/src/Mujoco_Acrobot.cpp.o: ../src/Mujoco_Acrobot.cp
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
+/usr/include/c++/9/math.h:
+
 /usr/include/cppad/local/op.hpp:
 
 /usr/include/linux/limits.h:
@@ -1539,6 +1576,8 @@ CMakeFiles/Mujoco_Acrobot.dir/src/Mujoco_Acrobot.cpp.o: ../src/Mujoco_Acrobot.cp
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/home/liu_xu/.mujoco/mujoco-3.0.0/include/mujoco/mujoco.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h:
 
@@ -2076,6 +2115,10 @@ CMakeFiles/Mujoco_Acrobot.dir/src/Mujoco_Acrobot.cpp.o: ../src/Mujoco_Acrobot.cp
 
 /usr/local/include/Eigen/src/SparseCore/SparseProduct.h:
 
+/usr/include/cppad/core/zdouble.hpp:
+
+/usr/local/include/Eigen/src/Core/Transpose.h:
+
 /usr/include/cppad/core/fun_eval.hpp:
 
 /usr/local/include/Eigen/src/Core/DiagonalMatrix.h:
@@ -2087,6 +2130,8 @@ CMakeFiles/Mujoco_Acrobot.dir/src/Mujoco_Acrobot.cpp.o: ../src/Mujoco_Acrobot.cp
 /usr/local/include/Eigen/src/Core/Visitor.h:
 
 /usr/local/include/Eigen/src/Core/Swap.h:
+
+/home/liu_xu/.mujoco/mujoco-3.0.0/include/mujoco/mjexport.h:
 
 /usr/local/include/Eigen/src/Core/util/ReenableStupidWarnings.h:
 
@@ -2119,6 +2164,8 @@ CMakeFiles/Mujoco_Acrobot.dir/src/Mujoco_Acrobot.cpp.o: ../src/Mujoco_Acrobot.cp
 /usr/local/include/Eigen/src/SparseCore/SparseColEtree.h:
 
 /usr/local/include/Eigen/src/SparseCore/SparseRef.h:
+
+/home/liu_xu/.mujoco/mujoco-3.0.0/include/mujoco/mjvisualize.h:
 
 /usr/local/include/Eigen/src/IterativeLinearSolvers/ConjugateGradient.h:
 
@@ -2278,6 +2325,8 @@ CMakeFiles/Mujoco_Acrobot.dir/src/Mujoco_Acrobot.cpp.o: ../src/Mujoco_Acrobot.cp
 
 /usr/local/include/Eigen/src/SparseCore/SparseDenseProduct.h:
 
+/home/liu_xu/.mujoco/mujoco-3.0.0/include/mujoco/mjtnum.h:
+
 /usr/local/include/Eigen/src/Geometry/Umeyama.h:
 
 /usr/local/include/Eigen/src/Eigenvalues/RealSchur.h:
@@ -2328,6 +2377,10 @@ CMakeFiles/Mujoco_Acrobot.dir/src/Mujoco_Acrobot.cpp.o: ../src/Mujoco_Acrobot.cp
 
 /usr/local/include/Eigen/src/SparseCore/SparseView.h:
 
+/usr/include/cppad/core/base_complex.hpp:
+
+/usr/local/include/Eigen/src/SparseCore/SparseTriangularView.h:
+
 /usr/local/include/Eigen/src/SparseCore/SparsePermutation.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
@@ -2359,6 +2412,10 @@ CMakeFiles/Mujoco_Acrobot.dir/src/Mujoco_Acrobot.cpp.o: ../src/Mujoco_Acrobot.cp
 /usr/include/cppad/local/sweep/rev_jac.hpp:
 
 /usr/local/include/Eigen/src/SparseLU/SparseLU_Memory.h:
+
+/home/liu_xu/.mujoco/mujoco-3.0.0/include/mujoco/mjui.h:
+
+/home/liu_xu/.mujoco/mujoco-3.0.0/include/mujoco/mjmodel.h:
 
 /usr/include/cppad/core/check_for_nan.hpp:
 
@@ -2434,6 +2491,20 @@ CMakeFiles/Mujoco_Acrobot.dir/src/Mujoco_Acrobot.cpp.o: ../src/Mujoco_Acrobot.cp
 
 /usr/include/c++/9/ctime:
 
+/usr/include/cppad/core/optimize.hpp:
+
+/usr/include/c++/9/ext/concurrence.h:
+
+/usr/include/c++/9/fstream:
+
+/usr/include/cppad/local/hash_code.hpp:
+
+/usr/include/c++/9/bits/locale_conv.h:
+
+/usr/include/cppad/local/parameter_op.hpp:
+
+/usr/include/c++/9/bits/fstream.tcc:
+
 /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h:
 
 /usr/local/include/Eigen/src/Core/arch/Default/Half.h:
@@ -2472,26 +2543,6 @@ CMakeFiles/Mujoco_Acrobot.dir/src/Mujoco_Acrobot.cpp.o: ../src/Mujoco_Acrobot.cp
 
 /usr/include/c++/9/bits/locale_facets_nonio.tcc:
 
-/usr/include/cppad/local/hash_code.hpp:
-
-/usr/include/c++/9/bits/locale_conv.h:
-
 /usr/include/c++/9/ratio:
 
 /usr/include/cppad/core/base_float.hpp:
-
-/usr/local/include/Eigen/src/SparseCore/SparseTriangularView.h:
-
-/usr/include/cppad/core/base_complex.hpp:
-
-/usr/include/cppad/core/optimize.hpp:
-
-/usr/include/c++/9/ext/concurrence.h:
-
-/usr/local/include/Eigen/src/Core/Transpose.h:
-
-/usr/include/cppad/core/zdouble.hpp:
-
-/usr/include/cppad/utility/nan.hpp:
-
-/usr/include/cppad/utility.hpp:

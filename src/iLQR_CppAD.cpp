@@ -289,7 +289,12 @@ void iLQR_CppAD::iLQR_Optimize()
             std::cout << "The final control trajectory is stored in.........................:" << "iLQR_CppAD::ctrl_traj_" <<std::endl;
             std::cout << "The final feedback gain matrix is stored in.......................:" << "iLQR_CppAD::K_iLQR_" << std::endl;
             std::cout << "The final Trajectory states are stored in.........................:" << "iLQR_CppAD::states_traj_" << std::endl;
-            std::cout << "traj end state.................:" << states_traj_[traj_len_-1](0) << " " << states_traj_[traj_len_-1](1) << " " << states_traj_[traj_len_-1](2) << " " << states_traj_[traj_len_-1](3) << std::endl;
+            std::cout << "traj end state.................: ";
+            for(int i = 0;i <state_dim_;i++)
+            {
+                std::cout << states_traj_[traj_len_-1](i) << " ";
+            }
+            std::cout << std::endl;
             std::cout << "..................................................................." << std::endl;
             break;
         }
@@ -309,7 +314,12 @@ void iLQR_CppAD::iLQR_Optimize()
         std::cout << "The final control trajectory is stored in.........................:" << "iLQR_CppAD::ctrl_traj_" <<std::endl;
         std::cout << "The final feedback gain matrix is stored in.......................:" << "iLQR_CppAD::K_iLQR_" << std::endl;
         std::cout << "The final Trajectory states are stored in.........................:" << "iLQR_CppAD::states_traj_" << std::endl;
-        std::cout << "traj end state.................:" << states_traj_[traj_len_-1](0) << " " << states_traj_[traj_len_-1](1) << " " << states_traj_[traj_len_-1](2) << " " << states_traj_[traj_len_-1](3) << std::endl;
+        std::cout << "traj end state.................: ";
+        for(int i = 0;i <state_dim_;i++)
+        {
+            std::cout << states_traj_[traj_len_-1](i) << " ";
+        }
+        std::cout << std::endl;
         std::cout << "..................................................................." << std::endl;
     }
 }

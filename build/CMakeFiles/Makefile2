@@ -64,7 +64,8 @@ CMAKE_BINARY_DIR = /home/liu_xu/liuxu_Documents/iLQR_CppAD/build
 
 # The main recursive "all" target.
 all: CMakeFiles/iLQR_CppAD.dir/all
-all: CMakeFiles/Mujoco_Acrobot.dir/all
+all: CMakeFiles/Acrobot_iLQR.dir/all
+all: CMakeFiles/Mujoco_visualize.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -73,7 +74,8 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/iLQR_CppAD.dir/clean
-clean: CMakeFiles/Mujoco_Acrobot.dir/clean
+clean: CMakeFiles/Acrobot_iLQR.dir/clean
+clean: CMakeFiles/Mujoco_visualize.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -83,7 +85,7 @@ clean: CMakeFiles/Mujoco_Acrobot.dir/clean
 CMakeFiles/iLQR_CppAD.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLQR_CppAD.dir/build.make CMakeFiles/iLQR_CppAD.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/iLQR_CppAD.dir/build.make CMakeFiles/iLQR_CppAD.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liu_xu/liuxu_Documents/iLQR_CppAD/build/CMakeFiles --progress-num=3,4 "Built target iLQR_CppAD"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liu_xu/liuxu_Documents/iLQR_CppAD/build/CMakeFiles --progress-num=5,6 "Built target iLQR_CppAD"
 .PHONY : CMakeFiles/iLQR_CppAD.dir/all
 
 # Build rule for subdir invocation for target.
@@ -103,30 +105,56 @@ CMakeFiles/iLQR_CppAD.dir/clean:
 .PHONY : CMakeFiles/iLQR_CppAD.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Mujoco_Acrobot.dir
+# Target rules for target CMakeFiles/Acrobot_iLQR.dir
 
 # All Build rule for target.
-CMakeFiles/Mujoco_Acrobot.dir/all: CMakeFiles/iLQR_CppAD.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mujoco_Acrobot.dir/build.make CMakeFiles/Mujoco_Acrobot.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mujoco_Acrobot.dir/build.make CMakeFiles/Mujoco_Acrobot.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liu_xu/liuxu_Documents/iLQR_CppAD/build/CMakeFiles --progress-num=1,2 "Built target Mujoco_Acrobot"
-.PHONY : CMakeFiles/Mujoco_Acrobot.dir/all
+CMakeFiles/Acrobot_iLQR.dir/all: CMakeFiles/iLQR_CppAD.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Acrobot_iLQR.dir/build.make CMakeFiles/Acrobot_iLQR.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Acrobot_iLQR.dir/build.make CMakeFiles/Acrobot_iLQR.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liu_xu/liuxu_Documents/iLQR_CppAD/build/CMakeFiles --progress-num=1,2 "Built target Acrobot_iLQR"
+.PHONY : CMakeFiles/Acrobot_iLQR.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Mujoco_Acrobot.dir/rule: cmake_check_build_system
+CMakeFiles/Acrobot_iLQR.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/liu_xu/liuxu_Documents/iLQR_CppAD/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Mujoco_Acrobot.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Acrobot_iLQR.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/liu_xu/liuxu_Documents/iLQR_CppAD/build/CMakeFiles 0
-.PHONY : CMakeFiles/Mujoco_Acrobot.dir/rule
+.PHONY : CMakeFiles/Acrobot_iLQR.dir/rule
 
 # Convenience name for target.
-Mujoco_Acrobot: CMakeFiles/Mujoco_Acrobot.dir/rule
-.PHONY : Mujoco_Acrobot
+Acrobot_iLQR: CMakeFiles/Acrobot_iLQR.dir/rule
+.PHONY : Acrobot_iLQR
 
 # clean rule for target.
-CMakeFiles/Mujoco_Acrobot.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mujoco_Acrobot.dir/build.make CMakeFiles/Mujoco_Acrobot.dir/clean
-.PHONY : CMakeFiles/Mujoco_Acrobot.dir/clean
+CMakeFiles/Acrobot_iLQR.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Acrobot_iLQR.dir/build.make CMakeFiles/Acrobot_iLQR.dir/clean
+.PHONY : CMakeFiles/Acrobot_iLQR.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Mujoco_visualize.dir
+
+# All Build rule for target.
+CMakeFiles/Mujoco_visualize.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mujoco_visualize.dir/build.make CMakeFiles/Mujoco_visualize.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mujoco_visualize.dir/build.make CMakeFiles/Mujoco_visualize.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liu_xu/liuxu_Documents/iLQR_CppAD/build/CMakeFiles --progress-num=3,4 "Built target Mujoco_visualize"
+.PHONY : CMakeFiles/Mujoco_visualize.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Mujoco_visualize.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liu_xu/liuxu_Documents/iLQR_CppAD/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Mujoco_visualize.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liu_xu/liuxu_Documents/iLQR_CppAD/build/CMakeFiles 0
+.PHONY : CMakeFiles/Mujoco_visualize.dir/rule
+
+# Convenience name for target.
+Mujoco_visualize: CMakeFiles/Mujoco_visualize.dir/rule
+.PHONY : Mujoco_visualize
+
+# clean rule for target.
+CMakeFiles/Mujoco_visualize.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mujoco_visualize.dir/build.make CMakeFiles/Mujoco_visualize.dir/clean
+.PHONY : CMakeFiles/Mujoco_visualize.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

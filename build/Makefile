@@ -130,41 +130,78 @@ iLQR_CppAD/fast:
 .PHONY : iLQR_CppAD/fast
 
 #=============================================================================
-# Target rules for targets named Mujoco_Acrobot
+# Target rules for targets named Acrobot_iLQR
 
 # Build rule for target.
-Mujoco_Acrobot: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Mujoco_Acrobot
-.PHONY : Mujoco_Acrobot
+Acrobot_iLQR: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Acrobot_iLQR
+.PHONY : Acrobot_iLQR
 
 # fast build rule for target.
-Mujoco_Acrobot/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mujoco_Acrobot.dir/build.make CMakeFiles/Mujoco_Acrobot.dir/build
-.PHONY : Mujoco_Acrobot/fast
+Acrobot_iLQR/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Acrobot_iLQR.dir/build.make CMakeFiles/Acrobot_iLQR.dir/build
+.PHONY : Acrobot_iLQR/fast
 
-src/Mujoco_Acrobot.o: src/Mujoco_Acrobot.cpp.o
-.PHONY : src/Mujoco_Acrobot.o
+#=============================================================================
+# Target rules for targets named Mujoco_visualize
+
+# Build rule for target.
+Mujoco_visualize: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Mujoco_visualize
+.PHONY : Mujoco_visualize
+
+# fast build rule for target.
+Mujoco_visualize/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mujoco_visualize.dir/build.make CMakeFiles/Mujoco_visualize.dir/build
+.PHONY : Mujoco_visualize/fast
+
+src/Acrobot_iLQR.o: src/Acrobot_iLQR.cpp.o
+.PHONY : src/Acrobot_iLQR.o
 
 # target to build an object file
-src/Mujoco_Acrobot.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mujoco_Acrobot.dir/build.make CMakeFiles/Mujoco_Acrobot.dir/src/Mujoco_Acrobot.cpp.o
-.PHONY : src/Mujoco_Acrobot.cpp.o
+src/Acrobot_iLQR.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Acrobot_iLQR.dir/build.make CMakeFiles/Acrobot_iLQR.dir/src/Acrobot_iLQR.cpp.o
+.PHONY : src/Acrobot_iLQR.cpp.o
 
-src/Mujoco_Acrobot.i: src/Mujoco_Acrobot.cpp.i
-.PHONY : src/Mujoco_Acrobot.i
+src/Acrobot_iLQR.i: src/Acrobot_iLQR.cpp.i
+.PHONY : src/Acrobot_iLQR.i
 
 # target to preprocess a source file
-src/Mujoco_Acrobot.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mujoco_Acrobot.dir/build.make CMakeFiles/Mujoco_Acrobot.dir/src/Mujoco_Acrobot.cpp.i
-.PHONY : src/Mujoco_Acrobot.cpp.i
+src/Acrobot_iLQR.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Acrobot_iLQR.dir/build.make CMakeFiles/Acrobot_iLQR.dir/src/Acrobot_iLQR.cpp.i
+.PHONY : src/Acrobot_iLQR.cpp.i
 
-src/Mujoco_Acrobot.s: src/Mujoco_Acrobot.cpp.s
-.PHONY : src/Mujoco_Acrobot.s
+src/Acrobot_iLQR.s: src/Acrobot_iLQR.cpp.s
+.PHONY : src/Acrobot_iLQR.s
 
 # target to generate assembly for a file
-src/Mujoco_Acrobot.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mujoco_Acrobot.dir/build.make CMakeFiles/Mujoco_Acrobot.dir/src/Mujoco_Acrobot.cpp.s
-.PHONY : src/Mujoco_Acrobot.cpp.s
+src/Acrobot_iLQR.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Acrobot_iLQR.dir/build.make CMakeFiles/Acrobot_iLQR.dir/src/Acrobot_iLQR.cpp.s
+.PHONY : src/Acrobot_iLQR.cpp.s
+
+src/Mujoco_visualize.o: src/Mujoco_visualize.cpp.o
+.PHONY : src/Mujoco_visualize.o
+
+# target to build an object file
+src/Mujoco_visualize.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mujoco_visualize.dir/build.make CMakeFiles/Mujoco_visualize.dir/src/Mujoco_visualize.cpp.o
+.PHONY : src/Mujoco_visualize.cpp.o
+
+src/Mujoco_visualize.i: src/Mujoco_visualize.cpp.i
+.PHONY : src/Mujoco_visualize.i
+
+# target to preprocess a source file
+src/Mujoco_visualize.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mujoco_visualize.dir/build.make CMakeFiles/Mujoco_visualize.dir/src/Mujoco_visualize.cpp.i
+.PHONY : src/Mujoco_visualize.cpp.i
+
+src/Mujoco_visualize.s: src/Mujoco_visualize.cpp.s
+.PHONY : src/Mujoco_visualize.s
+
+# target to generate assembly for a file
+src/Mujoco_visualize.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mujoco_visualize.dir/build.make CMakeFiles/Mujoco_visualize.dir/src/Mujoco_visualize.cpp.s
+.PHONY : src/Mujoco_visualize.cpp.s
 
 src/iLQR_CppAD.o: src/iLQR_CppAD.cpp.o
 .PHONY : src/iLQR_CppAD.o
@@ -198,11 +235,15 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Mujoco_Acrobot"
+	@echo "... Acrobot_iLQR"
+	@echo "... Mujoco_visualize"
 	@echo "... iLQR_CppAD"
-	@echo "... src/Mujoco_Acrobot.o"
-	@echo "... src/Mujoco_Acrobot.i"
-	@echo "... src/Mujoco_Acrobot.s"
+	@echo "... src/Acrobot_iLQR.o"
+	@echo "... src/Acrobot_iLQR.i"
+	@echo "... src/Acrobot_iLQR.s"
+	@echo "... src/Mujoco_visualize.o"
+	@echo "... src/Mujoco_visualize.i"
+	@echo "... src/Mujoco_visualize.s"
 	@echo "... src/iLQR_CppAD.o"
 	@echo "... src/iLQR_CppAD.i"
 	@echo "... src/iLQR_CppAD.s"

@@ -1,4 +1,4 @@
-#include "Mujoco_Acrobot.h"
+#include "Acrobot_iLQR.h"
 
 // Acrobot dynamic equation reference: https://blog.csdn.net/weixin_46536094/article/details/123582939
 Eigen::Vector<CppAD::AD<double>,4> Mujoco_Acrobot_iLQR::f_CppAD_(Eigen::Vector<CppAD::AD<double>,4> &x, Eigen::Vector<CppAD::AD<double>,1> &u)
@@ -153,14 +153,59 @@ void Mujoco_Acrobot_iLQR::terminal_cost_CppAD()
     std::cout << "Create Terminal cost for CppAD" << std::endl;
 }
 
+void Mujoco_Acrobot_iLQR::writeData()
+{
+    std::ofstream file;
+    file.open("states.csv");
+
+    for (int i = 0; i < traj_len_; i++)
+    {
+        if(i==traj_len_-1)
+        {
+            file << states_traj_[i](0) << "," << states_traj_[i](1) << "," << states_traj_[i](2) << "," << states_traj_[i](3);
+        }
+        else
+        {
+            file << states_traj_[i](0) << "," << states_traj_[i](1) << "," << states_traj_[i](2) << "," << states_traj_[i](3) << std::endl;
+        }
+    }
+    file.close();
+    file.open("ctrl.csv");
+    for (int i = 0; i < traj_len_-1; i++)
+    {
+        if(i==traj_len_-2)
+        {
+            file << ctrl_traj_[i](0);
+        }
+        else
+        {
+            file << ctrl_traj_[i](0) << std::endl;
+        }
+    }
+    file.close();
+    file.open("K.csv");
+    for(int i=0;i<traj_len_-1;i++)
+    {
+        if(i==traj_len_-2)
+        {
+            file << K_iLQR_[i](0,0) << "," << K_iLQR_[i](0,1) << "," << K_iLQR_[i](0,2) << "," << K_iLQR_[i](0,3);
+        }
+        else
+        {
+            file << K_iLQR_[i](0,0) << "," << K_iLQR_[i](0,1) << "," << K_iLQR_[i](0,2) << "," << K_iLQR_[i](0,3) << std::endl;
+        }
+    }
+    file.close();
+}
+
 int main(int argc, char *argv[])
 {
     srand(static_cast<unsigned int>(time(0)));
     Mujoco_Acrobot_iLQR acrobot_iLQR;
     acrobot_iLQR.setInitialState(Eigen::VectorXd::Zero(4));
-    acrobot_iLQR.setTrajLen(200);
+    acrobot_iLQR.setTrajLen(250);
     acrobot_iLQR.setDt(0.05);
-    acrobot_iLQR.setMaxIter(1000);
+    acrobot_iLQR.setMaxIter(1500);
     acrobot_iLQR.setConveregenceThresh(1e-2);
     std::vector<Eigen::VectorXd, Eigen::aligned_allocator<Eigen::VectorXd>> init_ctrl;
     init_ctrl.resize(acrobot_iLQR.getTrajLen()-1);
@@ -173,5 +218,6 @@ int main(int argc, char *argv[])
     acrobot_iLQR.stage_cost_CppAD();
     acrobot_iLQR.terminal_cost_CppAD();
     acrobot_iLQR.iLQR_Optimize();
+    acrobot_iLQR.writeData();
     return 0;
 }

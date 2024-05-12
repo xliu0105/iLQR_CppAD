@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/Acrobot_iLQR.dir/src/Acrobot_iLQR.cpp.o -o ../bin/Acrobot_iLQR   -L/home/liu_xu/liuxu_Documents/iLQR_CppAD/lib  -L/home/liu_xu/.mujoco/mujoco-3.0.0/lib  -Wl,-rpath,/home/liu_xu/liuxu_Documents/iLQR_CppAD/lib:/home/liu_xu/.mujoco/mujoco-3.0.0/lib ../lib/libiLQR_CppAD.so -lmujoco /usr/lib/x86_64-linux-gnu/libglfw.so.3.3 

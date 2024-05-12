@@ -1,0 +1,38 @@
+<mujoco model = "Acrobot">
+  <asset>
+    <texture name="grid" type="2d" builtin="checker" width="512" height="512" rgb1=".1 .2 .3" rgb2=".2 .3 .4"/>
+    <material name="grid" texture="grid" texrepeat="1 1" texuniform="true" reflectance=".2"/>
+  </asset>
+  
+  <option timestep="0.05" integrator = "RK4"/>
+
+  <worldbody>
+    <!-- 定义地面 -->
+    <geom type = "plane" size = "3 3 0.1" material="grid"/>
+    <!-- 定义光照 -->
+    <light name = "top light1"  dir = "0 0 -1" pos = "2 2 3"/>
+    <light name = "top light2"  dir = "0 0 -1" pos = "2 -2 3"/>
+    <light name = "top light3"  dir = "0 0 -1" pos = "-2 2 3"/>
+    <light name = "top light4"  dir = "0 0 -1" pos = "-2 -2 3"/>
+    <!-- 定义一个世界坐标系 -->
+    <geom name="x_axis" type="cylinder" fromto="0 0 0 0.3 0 0" size="0.01" rgba="1 0 0 1"/>
+    <geom name="y_axis" type="cylinder" fromto="0 0 0 0 0.3 0" size="0.01" rgba="0 1 0 1"/>
+    <geom name="z_axis" type="cylinder" fromto="0 0 0 0 0 0.3" size="0.01" rgba="0 0 1 1"/>
+
+    <!-- 定义Acrobot -->
+    <body name = "link1" pos = "0 0 2.5">
+      <geom type = "cylinder" size ="0.01 0.5" mass = "1" pos = "0 0 -0.5"/>
+      <joint name = "joint1" type = "hinge" axis = "0 -1 0"/>
+      <body name = "link2" pos = "0 0 -1">
+        <geom type = "cylinder" size = "0.01 0.5" mass = "1" pos = "0 0 -0.5"/>
+        <joint name = "joint2" type = "hinge" axis = "0 -1 0"/>
+      </body>
+    </body>
+  </worldbody>
+
+  <!-- 定义驱动器 -->
+  <actuator>
+    <motor joint = "joint2" name = "motor1" ctrllimited = "false"/>
+  </actuator>
+
+</mujoco>

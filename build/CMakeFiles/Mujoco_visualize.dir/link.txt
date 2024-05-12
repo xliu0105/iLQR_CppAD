@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/Mujoco_visualize.dir/src/Mujoco_visualize.cpp.o -o ../bin/Mujoco_visualize   -L/home/liu_xu/liuxu_Documents/iLQR_CppAD/lib  -L/home/liu_xu/.mujoco/mujoco-3.0.0/lib  -Wl,-rpath,/home/liu_xu/liuxu_Documents/iLQR_CppAD/lib:/home/liu_xu/.mujoco/mujoco-3.0.0/lib -lmujoco /usr/lib/x86_64-linux-gnu/libglfw.so.3.3 

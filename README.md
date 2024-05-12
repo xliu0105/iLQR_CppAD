@@ -13,4 +13,11 @@ If you want to use this iLQR library, you must create a class that inherits from
 
 You can check the structure of the `iLQR_CppAD` in `iLQR_CppAD.h`, you will get all you want to know if you are familiar with c++. I alse write a demo of **Acrobot** using `iLQR_CppAD`, you can check `Mujoco_Acrobot.h` and `Mujoco_Acrobot.cpp` to see how to use `iLQR_CppAD`.
 
+You can run the command: `./bin/Mujoco_visualize` to observe the visualization of Acrobot made by Mujoco, the Mujoco environment file in `./env/Acrobot.xml`.
+
+<video src="./README.assets/Acrobot_video.mp4"></video>
+
+It can be seen intuitively that the current solution only converges to the local optimal solution.
+
 This package has not been optimized and perfected yet, and will continue to be updated in the future. Your criticisms and suggestions are also welcome.
+

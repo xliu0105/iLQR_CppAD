@@ -209,6 +209,9 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//The directory containing a CMake configuration file for glfw3.
+glfw3_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/glfw3
+
 //Value Computed by CMake
 iLQR_CppAD_BINARY_DIR:STATIC=/home/liu_xu/liuxu_Documents/iLQR_CppAD/build
 
