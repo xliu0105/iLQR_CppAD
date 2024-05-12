@@ -16,9 +16,8 @@ You can check the structure of the `iLQR_CppAD` in `iLQR_CppAD.h`, you will get 
 You can run the command: `./bin/Mujoco_visualize` to observe the visualization of Acrobot made by Mujoco, the Mujoco environment file in `./env/Acrobot.xml`.
 
 
-https://github.com/xliu0105/iLQR_CppAD/assets/93865727/62642eff-ad65-46e2-af70-17a2585f5a22
+![Acrobot_video](README.assets/Acrobot_video.gif)
 
 It can be seen intuitively that the current solution only converges to the local optimal solution.
 
 This package has not been optimized and perfected yet, and will continue to be updated in the future. Your criticisms and suggestions are also welcome.
-
